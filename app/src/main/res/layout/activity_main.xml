@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIViewGroup xmlns:ui="http://schemas.android.com/apk/res-auto"
+             ui:width="1920"
+             ui:height="1080"
+             ui:positionX="0"
+             ui:positionY="0"
+             ui:positionZ="0"
+  >
+  <UIImageView
+    ui:width="1920"
+    ui:height="1080"
+    ui:src="@drawable/inair_bg"
+    />
+
+  <UIViewGroup
+               ui:height="1000"
+               ui:positionX="1000"
+               ui:positionY="40"
+               ui:positionZ="0"
+               ui:width="840"
+    >
+    <UIImageView
+      ui:height="500"
+      ui:id="@+id/main_photo"
+      ui:src="{Binding Path: 'photoSrc'}"
+      ui:width="800"
+      />
+
+    <UITextView
+      ui:alpha="1.0"
+      ui:fontSize="40.0"
+      ui:fontStyle="bold"
+      ui:height="60.0"
+      ui:positionY="540.0"
+      ui:text="{Binding Path: 'photoTitle'}"
+      ui:textColor="@color/white"
+      ui:width="800.0"
+      />
+
+    <UITextView
+      ui:alpha="1.0"
+      ui:fontSize="24.0"
+      ui:height="400.0"
+      ui:positionY="600.0"
+      ui:text="{Binding Path: 'photoDescription'}"
+      ui:textColor="@color/white"
+      ui:width="800.0"
+      />
+  </UIViewGroup>
+</UIViewGroup>
